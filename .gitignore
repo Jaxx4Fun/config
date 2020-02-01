@@ -1,0 +1,15 @@
+k*
+fcitx
+gtk*
+nvim/plugged
+Code/*
+!Code/User/settings.json
+vim
+variety/*
+!variety/*.conf
+coc/*
+nvim/tmp/*
+baloofilerc
+dolphinrc
+plasma-org.kde.plasma.desktop-appletsrc
+pulse/cookie

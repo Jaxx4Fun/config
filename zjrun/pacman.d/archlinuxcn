@@ -1,0 +1,8 @@
+## CDN (ipv4, http, https)
+## Global CDN (no nodes in mainland China)[archlinuxcn]
+## 浙江大学 (浙江杭州) (ipv4, ipv6, http, https)
+## Added: 2017-06-05[archlinuxcn]
+Server= https://mirrors.zju.edu.cn/archlinuxcn/$arch
+
+## 中国科学技术大学 (ipv4, ipv6, http, https)[archlinuxcn]
+Server= https://mirrors.ustc.edu.cn/archlinuxcn/$arch

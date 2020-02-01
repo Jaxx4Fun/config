@@ -1,0 +1,2 @@
+exec command: sudo pacman -Syy alacritty anaconda fcitx fcitx-configtool fcitx-googlepinyin fcitx-qt5 firefox fish google-chrome neovim papirus-icon-theme visual-studio-code-bin yay
+<os._wrap_close object at 0x7fe0fc067c10>

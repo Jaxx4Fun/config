@@ -1,0 +1,6 @@
+package config
+package spark
+package weather
+package wttr
+theme agnoster
+theme default
