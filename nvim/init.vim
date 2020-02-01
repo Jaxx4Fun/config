@@ -115,6 +115,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'Chiel92/vim-autoformat'
 call plug#end()
 set termguicolors
-let base16colorspace=256
-"colorscheme base16-material
-colorscheme base16-gruvbox-dark-hard
+let base16colorspace=256 "开启256的颜色空间"
+" colorscheme base16-google-dark
+" colorscheme base16-helios
+colorscheme base16-synth-midnight-dark
