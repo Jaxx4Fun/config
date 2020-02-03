@@ -113,6 +113,7 @@ Plug 'junegunn/vim-peekaboo'
 
 " Formatter
 Plug 'Chiel92/vim-autoformat'
+Plug 'preservim/nerdtree'
 call plug#end()
 set termguicolors
 let base16colorspace=256 "开启256的颜色空间"
