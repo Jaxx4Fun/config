@@ -14,3 +14,4 @@ dolphinrc
 plasma-org.kde.plasma.desktop-appletsrc
 pulse/cookie
 smartgit/*
+*/__pycache__/*

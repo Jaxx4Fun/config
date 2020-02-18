@@ -4,8 +4,11 @@ SETUVAR --export ANDROID_HOME:/home/jun/Android/Sdk
 SETUVAR --export FLUTTER_STORAGE_BASE_URL:https\x3a//storage\x2eflutter\x2dio\x2ecn
 SETUVAR --export GO111MODULE:on
 SETUVAR --export GOPROXY:https\x3a//goproxy\x2eio
+SETUVAR --export PAGER:more
 SETUVAR --export PUB_HOSTED_URL:https\x3a//pub\x2eflutter\x2dio\x2ecn
 SETUVAR RANGER_LOAD_DEFAULT_RC:FALSE
+SETUVAR --export SHELL:/usr/bin/fish
+SETUVAR --export VISUAL:nvim
 SETUVAR __GIT_PROMPT_DIR:/home/jun/\x2ebash\x2dgit\x2dprompt
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d

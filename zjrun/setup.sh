@@ -22,6 +22,8 @@ install_arr=(
     "nodejs"
     "npm"
     "typora"
+    "ranger"
+    "nerd-font-complete"
 )
 
 # 设置镜像源
