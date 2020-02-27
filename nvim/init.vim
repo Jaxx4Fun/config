@@ -9,7 +9,9 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-"
+" Esc取消高亮
+nnoremap <Esc> :noh<CR>
+
 " 文件编码
 set encoding=utf-8
 
@@ -70,6 +72,10 @@ noremap <LEADER>j <C-w>j
 noremap <LEADER>h <C-w>h
 noremap <LEADER>l <C-w>l
 
+" tab navigation
+noremap <LEADER>tn :tabnew<CR>
+"inoremap <C-Tab> :tabn<CR>
+
 " quick navi
 noremap J 5j
 noremap K 5k
@@ -83,7 +89,9 @@ set clipboard+=unnamedplus
 "inoremap <C-j> <Down>
 "inoremap <C-k> <Up>
 call plug#begin('~/.config/nvim/plugged')
-
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+ 
 Plug 'chriskempson/base16-vim'
 
 " Auto Complete
@@ -250,3 +258,24 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+"
+"" @airline
+"
+set t_Co=256      "在windows中用xshell连接打开vim可以显示色彩
+"这个是安装字体后 必须设置此项" 
+let g:airline_powerline_fonts = 1
+set laststatus=2  "永远显示状态栏
+"let g:airline_theme='bubblegum' "选择主题
+let g:airline_theme='base16' "选择主题
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#enabled=1    "Smarter tab line: 显示窗口tab和buffer
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+"let g:airline#extensions#tabline#left_sep = ' '  "separater
+"let g:airline#extensions#tabline#left_alt_sep = '|'  "separater
+"let g:airline#extensions#tabline#formatter = 'default'  "formater
+let g:airline_left_sep = '▶'
+"let g:airline_left_alt_sep = '❯'
+let g:airline_right_sep = '◀'
+"let g:airline_right_alt_sep = '❮'

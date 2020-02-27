@@ -1,6 +1,10 @@
+package autojump
 package config
 package spark
 package weather
 package wttr
 theme agnoster
 theme default
+theme emoji-powerline
+theme random
+theme robbyrussell
