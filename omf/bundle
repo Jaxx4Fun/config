@@ -4,6 +4,7 @@ package spark
 package weather
 package wttr
 theme agnoster
+theme bobthefish
 theme default
 theme emoji-powerline
 theme random

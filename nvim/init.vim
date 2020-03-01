@@ -60,10 +60,10 @@ noremap <LEADER>erc :e ~/.config/nvim/init.vim<CR>
 noremap <LEADER>rc :source ~/.config/nvim/init.vim<CR>
 
 noremap s <nop>
-noremap su :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
-noremap sb :set splitbelow<CR>:split<CR>
-noremap sl :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
-noremap sr :set splitright<CR>:vsplit<CR>
+noremap sk :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
+noremap sj :set splitbelow<CR>:split<CR>
+noremap sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
+noremap sl :set splitright<CR>:vsplit<CR>
 
 " windows navigation
 noremap <LEADER>w <C-w>w
@@ -89,10 +89,11 @@ set clipboard+=unnamedplus
 "inoremap <C-j> <Down>
 "inoremap <C-k> <Up>
 call plug#begin('~/.config/nvim/plugged')
+Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
  
-Plug 'chriskempson/base16-vim'
+"Plug 'chriskempson/base16-vim'
 
 " Auto Complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -119,12 +120,6 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'godlygeek/tabular' "必要插件，安装在vim-markdown前面
 Plug 'plasticboy/vim-markdown'
 
-" 安装插件
-Plug 'iamcco/markdown-preview.nvim'
-
-" Input Method Autoswitch
-"Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
-
 " Formatter
 Plug 'Chiel92/vim-autoformat'
 Plug 'preservim/nerdtree'
@@ -132,8 +127,10 @@ call plug#end()
 set termguicolors
 let base16colorspace=256 "开启256的颜色空间"
 "colorscheme base16-google-dark
-colorscheme base16-helios
-" colorscheme base16-synth-midnight-dark
+colorscheme nord
+"colorscheme base16-helios
+"colorscheme base16-nord
+"colorscheme base16-synth-midnight-dark
 
 
 " 指定浏览器路径
@@ -200,7 +197,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+"nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -267,15 +264,22 @@ set t_Co=256      "在windows中用xshell连接打开vim可以显示色彩
 let g:airline_powerline_fonts = 1
 set laststatus=2  "永远显示状态栏
 "let g:airline_theme='bubblegum' "选择主题
-let g:airline_theme='base16' "选择主题
-let g:airline#extensions#tabline#left_sep = ' '
+let g:airline_theme='nord' "选择主题
+let g:airline_highlighting_cache=1 " improve performance
+"let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#enabled=1    "Smarter tab line: 显示窗口tab和buffer
+let g:airline#extensions#tabline#show_splits = 0
+  let g:airline#extensions#tabline#show_buffers = 0
+  let g:airline#extensions#tabline#tab_nr_type = 1 " splits and tab number
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 "let g:airline#extensions#tabline#left_sep = ' '  "separater
 "let g:airline#extensions#tabline#left_alt_sep = '|'  "separater
 "let g:airline#extensions#tabline#formatter = 'default'  "formater
-let g:airline_left_sep = '▶'
+"let g:airline_left_sep = ''
 "let g:airline_left_alt_sep = '❯'
-let g:airline_right_sep = '◀'
+"let g:airline_right_sep = ''
 "let g:airline_right_alt_sep = '❮'
+
+
+highlight Normal guibg=NONE ctermbg=None

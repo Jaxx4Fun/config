@@ -9,6 +9,7 @@ SETUVAR --export PAGER:more
 SETUVAR --export PUB_HOSTED_URL:https\x3a//pub\x2eflutter\x2dio\x2ecn
 SETUVAR RANGER_LOAD_DEFAULT_RC:FALSE
 SETUVAR --export SHELL:/usr/bin/fish
+SETUVAR --export TERM:xterm\x2d256color
 SETUVAR --export VISUAL:nvim
 SETUVAR __GIT_PROMPT_DIR:/home/jun/\x2ebash\x2dgit\x2dprompt
 SETUVAR __fish_init_2_39_8:\x1d
@@ -18,6 +19,7 @@ SETUVAR _fish_abbr_gofish:cd\x20/home/jun/\x2econfig/fish/
 SETUVAR _fish_abbr_goranger:cd\x20/home/jun/\x2econfig/ranger/
 SETUVAR _fish_abbr_ra:ranger
 SETUVAR _fish_abbr_sudo:sudo
+SETUVAR _fish_abbr_t:tmux
 SETUVAR _fish_abbr_vim:nvim
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
