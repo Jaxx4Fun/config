@@ -4,7 +4,9 @@
 #    source "$BASE16_SHELL/profile_helper.fish"
 #end
 
-if test "$TMUX" 
-    tmux attach -t (whoami)||tmux new -s (whoami)
+if test ! -n "$TMUX" 
+    # #incompatible with vscode
+    # tmux attach -t (whoami)||tmux new -s (whoami)
 end
 
+alias sudo "sudo -E"

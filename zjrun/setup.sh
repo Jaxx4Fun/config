@@ -25,6 +25,7 @@ install_arr=(
     "ranger"
     "nerd-font-complete"
     "tmux"
+    "copyq"
 )
 
 # 设置镜像源

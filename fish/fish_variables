@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export ANDROID_HOME:/home/jun/Android/Sdk
+SETUVAR --export EDITOR:nvim
 SETUVAR --export FLUTTER_STORAGE_BASE_URL:https\x3a//storage\x2eflutter\x2dio\x2ecn
 SETUVAR --export GO111MODULE:on
 SETUVAR --export GOBIN:/home/jun/GoProjects//bin/
@@ -15,10 +16,10 @@ SETUVAR __GIT_PROMPT_DIR:/home/jun/\x2ebash\x2dgit\x2dprompt
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_gofish:cd\x20/home/jun/\x2econfig/fish/
 SETUVAR _fish_abbr_goranger:cd\x20/home/jun/\x2econfig/ranger/
 SETUVAR _fish_abbr_ra:ranger
-SETUVAR _fish_abbr_sudo:sudo
 SETUVAR _fish_abbr_t:tmux
 SETUVAR _fish_abbr_vim:nvim
 SETUVAR fish_color_autosuggestion:969896
@@ -32,6 +33,7 @@ SETUVAR fish_color_error:d54e53
 SETUVAR fish_color_escape:00a6b2
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:00a6b2

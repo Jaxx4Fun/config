@@ -92,7 +92,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
- 
+
+Plug 'tpope/vim-repeat' " 使得'.' 操作能重复上次的 cs.., ds., ys.. 
 "Plug 'chriskempson/base16-vim'
 
 " Auto Complete
