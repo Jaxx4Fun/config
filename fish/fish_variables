@@ -6,7 +6,9 @@ SETUVAR --export FLUTTER_STORAGE_BASE_URL:https\x3a//storage\x2eflutter\x2dio\x2
 SETUVAR --export GO111MODULE:on
 SETUVAR --export GOBIN:/home/jun/GoProjects//bin/
 SETUVAR --export GOPROXY:https\x3a//goproxy\x2eio
+SETUVAR --export GOROOT:/usr/local/go
 SETUVAR --export PAGER:more
+SETUVAR --export --path PATH:/home/jun/Flutter/bin/\x1e/home/jun/GoProjects//bin\x1e/usr/local/go/bin/\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/jun/\x2ecargo/bin
 SETUVAR --export PUB_HOSTED_URL:https\x3a//pub\x2eflutter\x2dio\x2ecn
 SETUVAR RANGER_LOAD_DEFAULT_RC:FALSE
 SETUVAR --export SHELL:/usr/bin/fish
@@ -51,4 +53,4 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR --export fish_user_paths:/home/jun/Flutter/bin/\x1e/home/jun/GoProjects//bin
+SETUVAR --export fish_user_paths:/home/jun/Flutter/bin/\x1e/home/jun/GoProjects//bin\x1e/usr/local/go/bin/\x1e\x2ecargo/bin
